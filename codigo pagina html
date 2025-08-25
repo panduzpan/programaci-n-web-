@@ -1,0 +1,136 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>EcoFresh - Frutas y Verduras Ecológicas a Domicilio</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0; padding: 0;
+      background-color: #f9f9f9;
+      color: #333;
+      line-height: 1.6;
+    }
+    header {
+      background: #4CAF50;
+      color: white;
+      text-align: center;
+      padding: 1rem;
+    }
+    nav a {
+      color: white; margin: 0 10px;
+      text-decoration: none; font-weight: bold;
+    }
+    nav a:hover { text-decoration: underline; }
+    main { max-width: 900px; margin: auto; padding: 20px; }
+    section {
+      background: white; padding: 20px; margin-bottom: 30px;
+      border-radius: 8px; box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+    h1, h2 { color: #2E7D32; }
+    img, video { max-width: 100%; border-radius: 8px; }
+    form { display: grid; grid-gap: 15px; }
+    input, select, textarea {
+      padding: 10px; border: 1px solid #ccc; border-radius: 4px;
+    }
+    button {
+      background: #4CAF50; color: white;
+      border: none; padding: 10px;
+      font-size: 16px; border-radius: 4px;
+      cursor: pointer;
+    }
+    button:hover { background: #2E7D32; }
+    footer {
+      background: #333; color: white;
+      text-align: center; padding: 15px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>EcoFresh</h1>
+    <nav>
+      <a href="#valor">Propuesta</a> |
+      <a href="#clientes">Clientes</a> |
+      <a href="#ingresos">Ingresos</a> |
+      <a href="#validacion">Validación</a>
+    </nav>
+  </header>
+
+  <main>
+    <!-- Propuesta -->
+    <section id="valor">
+      <h2>Propuesta de valor</h2>
+      <p>EcoFresh conecta agricultores locales con consumidores conscientes, entregando frutas y verduras frescas, ecológicas y de temporada directamente en su hogar.</p>
+      <img src="https://images.unsplash.com/photo-1542838132-92c53300491e?auto=format&fit=crop&w=800&q=80" alt="Cesta con frutas y verduras frescas">
+    </section>
+
+    <!-- Clientes -->
+    <section id="clientes">
+      <h2>Segmento de clientes</h2>
+      <ul>
+        <li>Familias interesadas en alimentación saludable.</li>
+        <li>Personas con dietas específicas (veganas, sin gluten, etc.).</li>
+        <li>Profesionales ocupados que buscan conveniencia y calidad.</li>
+      </ul>
+      <img src="https://images.unsplash.com/photo-1498837167922-ddd27525d352?auto=format&fit=crop&w=800&q=80" alt="Familia disfrutando de alimentos saludables">
+    </section>
+
+    <!-- Ingresos -->
+    <section id="ingresos">
+      <h2>Fuentes de ingreso</h2>
+      <ol>
+        <li>Suscripciones semanales o quincenales con cajas personalizadas.</li>
+        <li>Ventas puntuales de productos adicionales (huevos, miel, pan artesanal).</li>
+        <li>Planes premium con recetas exclusivas y productos gourmet.</li>
+      </ol>
+      <img src="https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?auto=format&fit=crop&w=800&q=80" alt="Agricultor local cosechando verduras">
+    </section>
+
+    <!-- Validación -->
+    <section id="validacion">
+      <h2>Validación / Contacto</h2>
+      <p>Ayúdanos respondiendo este breve formulario:</p>
+
+      <form action="mailto:contacto@ecofresh.com" method="post" enctype="text/plain">
+        <label for="nombre">Nombre</label>
+        <input id="nombre" name="nombre" required placeholder="Tu nombre completo">
+
+        <label for="email">Correo electrónico</label>
+        <input id="email" name="email" type="email" required placeholder="tu.email@ejemplo.com">
+
+        <label for="interes">¿Te interesaría suscribirte a EcoFresh?</label>
+        <select id="interes" name="interes">
+          <option>Sí</option><option>No</option><option>Tal vez</option>
+        </select>
+
+        <label for="precio">Precio mensual que pagarías (USD)</label>
+        <input id="precio" name="precio" type="number" min="0" placeholder="Ej: 40">
+
+        <label for="coment">Comentarios</label>
+        <textarea id="coment" name="coment" rows="4" placeholder="¿Qué mejorarías en EcoFresh?"></textarea>
+
+        <button type="submit">Enviar</button>
+      </form>
+
+      <p>También puedes visitarnos en 
+        <a href="https://instagram.com" target="_blank">Instagram</a>.
+      </p>
+    </section>
+
+    <!-- Extra multimedia -->
+    <section>
+      <h2>Conoce nuestra labor</h2>
+      <video controls>
+        <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
+        Tu navegador no soporta el video.
+      </video>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2025 EcoFresh - Conectando agricultores y consumidores conscientes</p>
+  </footer>
+</body>
+</html>
